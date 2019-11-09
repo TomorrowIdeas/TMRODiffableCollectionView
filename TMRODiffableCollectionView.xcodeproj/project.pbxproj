@@ -10,6 +10,33 @@
 		D6118A19237725AD0052764F /* TMRODiffableCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118A17237725AD0052764F /* TMRODiffableCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6118A20237726F70052764F /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6118A1F237726F70052764F /* CollectionView.swift */; };
 		D6118A222377275E0052764F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6118A212377275E0052764F /* UIView+Extensions.swift */; };
+		D6118A25237728CE0052764F /* DiffableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6118A24237728CE0052764F /* DiffableBox.swift */; };
+		D6118FF6237729670052764F /* IGListDiff.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6118FE5237729660052764F /* IGListDiff.mm */; };
+		D6118FF7237729670052764F /* IGListMoveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = D6118FE6237729660052764F /* IGListMoveIndex.m */; };
+		D6118FF8237729670052764F /* IGListIndexPathResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FE7237729660052764F /* IGListIndexPathResult.h */; };
+		D6118FF9237729670052764F /* IGListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FE8237729660052764F /* IGListDiff.h */; };
+		D6118FFA237729670052764F /* IGListMoveIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D6118FE9237729660052764F /* IGListMoveIndexPath.m */; };
+		D6118FFB237729670052764F /* IGListIndexSetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FEA237729660052764F /* IGListIndexSetResult.h */; };
+		D6118FFC237729670052764F /* IGListMoveIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FEB237729660052764F /* IGListMoveIndexPath.h */; };
+		D6118FFD237729670052764F /* IGListAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FEC237729660052764F /* IGListAssert.h */; };
+		D6118FFE237729670052764F /* IGListIndexPathResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D6118FED237729660052764F /* IGListIndexPathResult.m */; };
+		D6118FFF237729670052764F /* IGListBatchUpdateData.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6118FEE237729660052764F /* IGListBatchUpdateData.mm */; };
+		D6119000237729670052764F /* IGListBatchUpdateData.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FEF237729660052764F /* IGListBatchUpdateData.h */; };
+		D6119001237729670052764F /* IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FF0237729660052764F /* IGListDiffable.h */; };
+		D6119002237729670052764F /* IGListExperiments.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FF1237729660052764F /* IGListExperiments.h */; };
+		D6119003237729670052764F /* IGListIndexSetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D6118FF2237729660052764F /* IGListIndexSetResult.m */; };
+		D6119004237729670052764F /* IGListMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FF3237729660052764F /* IGListMacros.h */; };
+		D6119005237729670052764F /* IGListMoveIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FF4237729670052764F /* IGListMoveIndex.h */; };
+		D6119006237729670052764F /* IGListCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118FF5237729670052764F /* IGListCompatibility.h */; };
+		D611900B237729710052764F /* NSString+IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = D6119007237729710052764F /* NSString+IGListDiffable.h */; };
+		D611900C237729710052764F /* NSString+IGListDiffable.m in Sources */ = {isa = PBXBuildFile; fileRef = D6119008237729710052764F /* NSString+IGListDiffable.m */; };
+		D611900D237729710052764F /* NSNumber+IGListDiffable.m in Sources */ = {isa = PBXBuildFile; fileRef = D6119009237729710052764F /* NSNumber+IGListDiffable.m */; };
+		D611900E237729710052764F /* NSNumber+IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = D611900A237729710052764F /* NSNumber+IGListDiffable.h */; };
+		D61190152377299B0052764F /* IGListArrayUtilsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D61190102377299B0052764F /* IGListArrayUtilsInternal.h */; };
+		D61190162377299B0052764F /* IGListIndexPathResultInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D61190112377299B0052764F /* IGListIndexPathResultInternal.h */; };
+		D61190172377299B0052764F /* IGListIndexSetResultInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D61190122377299B0052764F /* IGListIndexSetResultInternal.h */; };
+		D61190182377299B0052764F /* IGListMoveIndexPathInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D61190132377299B0052764F /* IGListMoveIndexPathInternal.h */; };
+		D61190192377299B0052764F /* IGListMoveIndexInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D61190142377299B0052764F /* IGListMoveIndexInternal.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +45,33 @@
 		D6118A18237725AD0052764F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6118A1F237726F70052764F /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		D6118A212377275E0052764F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D6118A24237728CE0052764F /* DiffableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableBox.swift; sourceTree = "<group>"; };
+		D6118FE5237729660052764F /* IGListDiff.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGListDiff.mm; sourceTree = "<group>"; };
+		D6118FE6237729660052764F /* IGListMoveIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGListMoveIndex.m; sourceTree = "<group>"; };
+		D6118FE7237729660052764F /* IGListIndexPathResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListIndexPathResult.h; sourceTree = "<group>"; };
+		D6118FE8237729660052764F /* IGListDiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListDiff.h; sourceTree = "<group>"; };
+		D6118FE9237729660052764F /* IGListMoveIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGListMoveIndexPath.m; sourceTree = "<group>"; };
+		D6118FEA237729660052764F /* IGListIndexSetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListIndexSetResult.h; sourceTree = "<group>"; };
+		D6118FEB237729660052764F /* IGListMoveIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListMoveIndexPath.h; sourceTree = "<group>"; };
+		D6118FEC237729660052764F /* IGListAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListAssert.h; sourceTree = "<group>"; };
+		D6118FED237729660052764F /* IGListIndexPathResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGListIndexPathResult.m; sourceTree = "<group>"; };
+		D6118FEE237729660052764F /* IGListBatchUpdateData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGListBatchUpdateData.mm; sourceTree = "<group>"; };
+		D6118FEF237729660052764F /* IGListBatchUpdateData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListBatchUpdateData.h; sourceTree = "<group>"; };
+		D6118FF0237729660052764F /* IGListDiffable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListDiffable.h; sourceTree = "<group>"; };
+		D6118FF1237729660052764F /* IGListExperiments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListExperiments.h; sourceTree = "<group>"; };
+		D6118FF2237729660052764F /* IGListIndexSetResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGListIndexSetResult.m; sourceTree = "<group>"; };
+		D6118FF3237729660052764F /* IGListMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListMacros.h; sourceTree = "<group>"; };
+		D6118FF4237729670052764F /* IGListMoveIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListMoveIndex.h; sourceTree = "<group>"; };
+		D6118FF5237729670052764F /* IGListCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListCompatibility.h; sourceTree = "<group>"; };
+		D6119007237729710052764F /* NSString+IGListDiffable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IGListDiffable.h"; sourceTree = "<group>"; };
+		D6119008237729710052764F /* NSString+IGListDiffable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IGListDiffable.m"; sourceTree = "<group>"; };
+		D6119009237729710052764F /* NSNumber+IGListDiffable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+IGListDiffable.m"; sourceTree = "<group>"; };
+		D611900A237729710052764F /* NSNumber+IGListDiffable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+IGListDiffable.h"; sourceTree = "<group>"; };
+		D61190102377299B0052764F /* IGListArrayUtilsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListArrayUtilsInternal.h; sourceTree = "<group>"; };
+		D61190112377299B0052764F /* IGListIndexPathResultInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListIndexPathResultInternal.h; sourceTree = "<group>"; };
+		D61190122377299B0052764F /* IGListIndexSetResultInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListIndexSetResultInternal.h; sourceTree = "<group>"; };
+		D61190132377299B0052764F /* IGListMoveIndexPathInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListMoveIndexPathInternal.h; sourceTree = "<group>"; };
+		D61190142377299B0052764F /* IGListMoveIndexInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListMoveIndexInternal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +104,63 @@
 		D6118A16237725AD0052764F /* TMRODiffableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				D6118A23237728B50052764F /* Diffable */,
 				D6118A17237725AD0052764F /* TMRODiffableCollectionView.h */,
 				D6118A18237725AD0052764F /* Info.plist */,
 				D6118A1F237726F70052764F /* CollectionView.swift */,
 				D6118A212377275E0052764F /* UIView+Extensions.swift */,
 			);
 			path = TMRODiffableCollectionView;
+			sourceTree = "<group>";
+		};
+		D6118A23237728B50052764F /* Diffable */ = {
+			isa = PBXGroup;
+			children = (
+				D6118FE4237729500052764F /* IGListDiff */,
+				D6118A24237728CE0052764F /* DiffableBox.swift */,
+			);
+			path = Diffable;
+			sourceTree = "<group>";
+		};
+		D6118FE4237729500052764F /* IGListDiff */ = {
+			isa = PBXGroup;
+			children = (
+				D611900F2377298B0052764F /* Internal */,
+				D611900A237729710052764F /* NSNumber+IGListDiffable.h */,
+				D6119009237729710052764F /* NSNumber+IGListDiffable.m */,
+				D6119007237729710052764F /* NSString+IGListDiffable.h */,
+				D6119008237729710052764F /* NSString+IGListDiffable.m */,
+				D6118FEC237729660052764F /* IGListAssert.h */,
+				D6118FEF237729660052764F /* IGListBatchUpdateData.h */,
+				D6118FEE237729660052764F /* IGListBatchUpdateData.mm */,
+				D6118FF5237729670052764F /* IGListCompatibility.h */,
+				D6118FE8237729660052764F /* IGListDiff.h */,
+				D6118FE5237729660052764F /* IGListDiff.mm */,
+				D6118FF0237729660052764F /* IGListDiffable.h */,
+				D6118FF1237729660052764F /* IGListExperiments.h */,
+				D6118FE7237729660052764F /* IGListIndexPathResult.h */,
+				D6118FED237729660052764F /* IGListIndexPathResult.m */,
+				D6118FEA237729660052764F /* IGListIndexSetResult.h */,
+				D6118FF2237729660052764F /* IGListIndexSetResult.m */,
+				D6118FF3237729660052764F /* IGListMacros.h */,
+				D6118FF4237729670052764F /* IGListMoveIndex.h */,
+				D6118FE6237729660052764F /* IGListMoveIndex.m */,
+				D6118FEB237729660052764F /* IGListMoveIndexPath.h */,
+				D6118FE9237729660052764F /* IGListMoveIndexPath.m */,
+			);
+			path = IGListDiff;
+			sourceTree = "<group>";
+		};
+		D611900F2377298B0052764F /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				D61190102377299B0052764F /* IGListArrayUtilsInternal.h */,
+				D61190112377299B0052764F /* IGListIndexPathResultInternal.h */,
+				D61190122377299B0052764F /* IGListIndexSetResultInternal.h */,
+				D61190142377299B0052764F /* IGListMoveIndexInternal.h */,
+				D61190132377299B0052764F /* IGListMoveIndexPathInternal.h */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,6 +171,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6118A19237725AD0052764F /* TMRODiffableCollectionView.h in Headers */,
+				D61190192377299B0052764F /* IGListMoveIndexInternal.h in Headers */,
+				D6119000237729670052764F /* IGListBatchUpdateData.h in Headers */,
+				D61190162377299B0052764F /* IGListIndexPathResultInternal.h in Headers */,
+				D6119005237729670052764F /* IGListMoveIndex.h in Headers */,
+				D6118FF8237729670052764F /* IGListIndexPathResult.h in Headers */,
+				D6118FF9237729670052764F /* IGListDiff.h in Headers */,
+				D61190172377299B0052764F /* IGListIndexSetResultInternal.h in Headers */,
+				D6119002237729670052764F /* IGListExperiments.h in Headers */,
+				D6118FFB237729670052764F /* IGListIndexSetResult.h in Headers */,
+				D611900E237729710052764F /* NSNumber+IGListDiffable.h in Headers */,
+				D6118FFD237729670052764F /* IGListAssert.h in Headers */,
+				D61190152377299B0052764F /* IGListArrayUtilsInternal.h in Headers */,
+				D6118FFC237729670052764F /* IGListMoveIndexPath.h in Headers */,
+				D6119006237729670052764F /* IGListCompatibility.h in Headers */,
+				D6119001237729670052764F /* IGListDiffable.h in Headers */,
+				D611900B237729710052764F /* NSString+IGListDiffable.h in Headers */,
+				D61190182377299B0052764F /* IGListMoveIndexPathInternal.h in Headers */,
+				D6119004237729670052764F /* IGListMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +262,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6118A222377275E0052764F /* UIView+Extensions.swift in Sources */,
+				D6119003237729670052764F /* IGListIndexSetResult.m in Sources */,
 				D6118A20237726F70052764F /* CollectionView.swift in Sources */,
+				D6118FF6237729670052764F /* IGListDiff.mm in Sources */,
+				D611900C237729710052764F /* NSString+IGListDiffable.m in Sources */,
+				D6118FFF237729670052764F /* IGListBatchUpdateData.mm in Sources */,
+				D6118FFE237729670052764F /* IGListIndexPathResult.m in Sources */,
+				D6118FF7237729670052764F /* IGListMoveIndex.m in Sources */,
+				D611900D237729710052764F /* NSNumber+IGListDiffable.m in Sources */,
+				D6118FFA237729670052764F /* IGListMoveIndexPath.m in Sources */,
+				D6118A25237728CE0052764F /* DiffableBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
