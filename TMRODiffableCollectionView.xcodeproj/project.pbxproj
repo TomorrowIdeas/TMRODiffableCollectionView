@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D6118A19237725AD0052764F /* TMRODiffableCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6118A17237725AD0052764F /* TMRODiffableCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6118A20237726F70052764F /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6118A1F237726F70052764F /* CollectionView.swift */; };
+		D6118A222377275E0052764F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6118A212377275E0052764F /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6118A14237725AD0052764F /* TMRODiffableCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMRODiffableCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6118A17237725AD0052764F /* TMRODiffableCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMRODiffableCollectionView.h; sourceTree = "<group>"; };
 		D6118A18237725AD0052764F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6118A1F237726F70052764F /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		D6118A212377275E0052764F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				D6118A17237725AD0052764F /* TMRODiffableCollectionView.h */,
 				D6118A18237725AD0052764F /* Info.plist */,
+				D6118A1F237726F70052764F /* CollectionView.swift */,
+				D6118A212377275E0052764F /* UIView+Extensions.swift */,
 			);
 			path = TMRODiffableCollectionView;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					D6118A13237725AD0052764F = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6118A222377275E0052764F /* UIView+Extensions.swift in Sources */,
+				D6118A20237726F70052764F /* CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -245,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -260,6 +269,7 @@
 		D6118A1D237725AD0052764F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7KLRW8RU62;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomorrowideas.TMRODiffableCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		D6118A1E237725AD0052764F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7KLRW8RU62;
